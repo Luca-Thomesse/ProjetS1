@@ -1,0 +1,20 @@
+.header {
+    background-color: var(--gris-maquette);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 375px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100px;
+  }
+  
+  .header__start,
+  .header__end {
+    display: flex;
+  }
+  
+  .header__start {
+    align-items: center;
+  }

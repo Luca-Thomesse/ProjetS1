@@ -10,7 +10,7 @@
 
     /* Text-size styles */
 --titre-site: 40px;
---titre-site-footer-texte-séparation-et-menu: 24px;
+--titre-h2: 24px;
 --titre-de-page: 24px;
 --dates-du-site: 20px;
 --textes: 16px;
@@ -20,15 +20,16 @@
 --footer-texte: 14px;
 --footer-graisse-texte: 14px;
 --mots-glossaire: 16px;
+--menu: 18px;
 
     /* Fonts */
-font-family: 'Roboto', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Ropa Sans', sans-serif;
+--font-footer: 'Roboto', sans-serif;
+--font-texte: 'Raleway', sans-serif;
+--font-titre: 'Ropa Sans', sans-serif;
 
     /* Espace */
---space1: 50px;
---space2: 25px;
---space3: 20px;
---space4: 10px;
+--space1x: 50px;
+--space2x: 25px;
+--space3x: 20px;
+--space4x: 10px;
 }

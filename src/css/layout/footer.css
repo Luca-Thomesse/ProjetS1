@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--gris-maquette);
+    width: 100%;
+    min-height: 300px;
+}
+  
+.footer a {
+    color: var(--blanc-maquette);
+    text-decoration: none;
+}
+
+.footer p {
+      color: var(--blanc-maquette)
+}

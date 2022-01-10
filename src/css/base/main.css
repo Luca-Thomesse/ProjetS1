@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#Accueil {
+    font-size: var(--titre-site);
+    font-family: var(--font-titre);
+    color: white;
+    padding-top: 300px;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    margin-left: 81px;
+    letter-spacing: 5px;
+}
+
+#illustration {
+    position: absolute;
+    z-index: -1;
+    padding-top: 100px;
+    height: 682px;
+    width: 375px;
+}
+
+h1  {
+    font-size: var(--titre-de-page);
+    font-family: var(--font-titre);
+}
+
+h2 {
+    font-size: var(--titre-h2);
+    font-family: var(--font-titre);
+}
+
+.intro>p {
+    font-size: var(--intro-du-site);
+    font-family: var(--font-texte);
+    padding-top: 682px;
+    margin-right: 17,5px;
+    margin-left: 17,5px;
+}
+
+.menu__link {
+    font-size: var(--menu);
+    font-family: var(--font-texte);
+    font-weight: 275px;
+}
+
+p {
+    font-size: var(--textes);
+    font-family: var(--font-texte);
+}

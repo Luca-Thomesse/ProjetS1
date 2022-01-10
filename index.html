@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,24 @@
     <title>Art visuel et féminisme</title>
 
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
 
 </head>
 <body>
     <header class="header">
 
         <div class="header__start">
-            <a class="header__logo" href="/">
+            <a class="header__logo" href="index.html">
                 <img src="public/logo_site/logo_site.png" alt="Logo du site Art visuel et féminisme">
             </a>
         </div>
 
         <div class="header__end">
-            <button>
-                <button class="header__menu-btn menu-btn">
+            <button class="header__menu-btn menu-btn" x-on:click="menuIsOpen=!menuIsOpen">
                 <span class="menu-btn__bar"></span>
             </button>
 
-            <nav class="header__menu menu">
+            <nav class="header__menu menu" x-bind:class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
                   <li class="menu__item">
                     <a class="menu__link" href="Article1.html">Une histoire de l'art féministe</a>
@@ -38,16 +38,16 @@
                     <a class="menu__link" href="Article3.html">L’art et le féminisme au plus proche des jeunes</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="Video.html">La video</a>
+                    <a class="menu__link" href="Video.html">Vidéo</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="Glossaire.html">Le glossaire</a>
+                    <a class="menu__link" href="Glossaire.html">Glossaire</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="Contact.html">La formulaire de contact</a>
+                    <a class="menu__link" href="Contact.html">Contact</a>
                   </li>
                   <li class="menu__item">
-                    <a class="menu__link" href="A-propos.html">A propos de moi</a>
+                    <a class="menu__link" href="A-propos.html">À propos</a>
                   </li>
                 </ul>
               </nav>
@@ -55,7 +55,8 @@
     </header>
 
     <main>
-        <h1>Art visuel et féminisme</h1>
+        <h1 id="Accueil">Art visuel et féminisme</h1>
+        <img id="illustration" src="/public/images-site/image_home.webp" alt="illustration">
         <div class="intro">
           <p>Le féminisme fait partie des enjeux de notre société et ce, depuis plusieurs centaines d'années. 
             Dans ce site, une vision du féminisme en France et tournée vers l'art est présentée car les images peuvent aussi bien être des vecteurs des idées de ce combat. 
