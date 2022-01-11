@@ -75,3 +75,11 @@ p {
 .caroussel {
     display: flex;
 }
+
+#mmi {
+    color: var(--violet-maquette);
+}
+
+.ftr {
+    color: white;
+}
