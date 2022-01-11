@@ -73,5 +73,7 @@
     color: var(--blanc-maquette);
     text-decoration: none;
     font-size: 20px;
-    box-align: center;
+    position: center;
+    text-align: center;
+   
 }

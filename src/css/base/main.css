@@ -47,6 +47,7 @@ h1  {
 h2 {
     font-size: var(--titre-h2);
     font-family: var(--font-titre);
+    text-align: center;
 }
 
 .intro>p {
@@ -61,6 +62,14 @@ h2 {
     font-size: 14px;
     font-family: var(--font-texte);
     font-weight: 275px;
+    text-align: center;
+}
+
+.menu__item {
+    text-align: center;
+    letter-spacing: 2px;
+    padding: auto;
+
 }
 
 p {
