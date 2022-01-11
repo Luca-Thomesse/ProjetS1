@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Art visuel et féminisme">
+
+    <title>Visual art and feminism</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</head>
+<body>
+    <header class="header">
+
+        <div class="header__start">
+            <a class="header__logo" href="index.html">
+                <img src="public/logo_site/logo_site.png" alt="Logo du site Art visuel et féminisme">
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" x-on:click="menuIsOpen=!menuIsOpen">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="Article1 copy.html">A history of feminist art</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="Article2 copy.html">Feminist Artistic Expression Today</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="Article3 copy.html">Art and feminism closer to the youth</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="Video copy.html">Video</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="Glossaire copy.html">Glossary</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="Contact copy.html">Contact form</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="A-propos copy.html">About</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+  </header>
+
+    <main>
+        <h1 id="Accueil">Visual art and feminism</h1>
+        <img id="illustration" src="/public/images-site/image_home.webp" alt="illustration">
+        <div class="intro">
+          <p>Feminism is part of the issues of our society and has been for several hundred years. 
+            In this site, a vision of feminism in France and turned towards art is presented because images can be as well vectors of the ideas of this fight. 
+            It is not for nothing that we say that a picture is worth a thousand words. </p>
+        </div>
+
+        <article class="tweet">
+          <h2 class="tweet__title">A feminist art history</h2>
+            <p>A story rich in values and artistic visuals, discover a feminist artist of the past.</p>
+              <div>
+                <img src="public/images-site/image_tweet_1.webp" alt="Image du tweet de l'article Une histoire de l'art féministe">
+                <p><a href="Article1.html">READ</a></p>
+            </div>
+        </article>
+
+        <article class="tweet tweet--left">
+            <h2 class="tweet__title">Feminist artistic expression today</h2>
+            <p>The world is changing, so is art and the feminist struggle. How is feminism transmitted today?</p>
+              <div></div>
+                <img src="public/images-site/image_tweet_2.webp" alt="Image du tweet de l'article L’expression artistique féministe d’aujourd’hui">
+                <p><a href="Article2.html">READ</a></p>
+              </div>
+        </article>
+
+        <article class="tweet">
+            <h2 class="tweet__title">Art and feminism closer to young people</h2>
+            <p>The young generation is a hope for change. We have seen this with global warming. What about feminism?</p>
+              <div>
+                <img src="public/images-site/Image_tweet_3.webp" alt="Image du tweet de l'article L’art et le féminisme au plus proche des jeunes">
+                <p><a href="Article3.html">READ</a></p>
+              </div>
+        </article>
+
+        <article class="tweet tweet--left">
+            <h2 class="tweet__title">Video</h2>
+            <p>Discover a situation of feminism in this video</p>
+              <div>
+                <img src="#" alt="Image du tweet de la vidéo">
+                <p><a href="Video.html">READ</a></p>
+              </div>
+        </article>
+
+        <h2>Feminist Gallery</h2>
+
+        <div class="caroussel">
+          <div>
+            <img src="public/images-site/image1_galerie.webp" alt="Photo de Olympe de Gouges">
+            <p>Olympe De Gouges 1748 - 1793 Wrote the Declaration of the Rights of Women and Citizens in 1791.</p>
+          </div>
+          <div>
+            <img src="public/images-site/image2_galerie.webp" alt="Photo de Simone de Beauvoir">
+            <p>Simone De Beauvoir 1908 - 1986 Wrote The Second Sex in 1949</p>
+          </div>
+          <div>
+            <img src="public/images-site/image3_galerie.webp" alt="Photo de Simone Veil">
+            <p>Simone Veil 1927 - 2017 Veil law for the authorization of abortion in 1975</p>
+          </div>
+          <div>
+            <img src="public/images-site/image4_galerie.webp" alt="Photo de Niki de Saint-Phalle">
+            <p>Niki de Saint Phalle 1930 - 2002 The making of the NANAS</p>
+          </div>
+          <div>
+            <img src="public/images-site/image5_galerie.webp" alt="Photo de Sophie Bramly">
+            <p>Sophie Bramly 1959 Part of the Feminist Collective and founder of the website SecondSexe.com</p>
+          </div>
+          <div>
+            <img src="public/images-site/image6_galerie.webp" alt="Photo de Pénélope Bagieu">
+            <p>Penelope Bagieu 1982 Wrote the tom 1 of the Culottées in 2016. In 2019 the complete book was published.</p>
+          </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+      <h2>Visual art and feminism</h2>
+        <p><a href="index.html">FR</a>/<a href="index copy.html"></a>ENG</p>
+        <p>Luca THOMESSE</p>
+        <p>Group C2</p>
+        <address class="footer__adress">
+          <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
+        </address>
+        <p>Legal notice :</p>
+        <p>Project carried out as part of an educational exercise in the department <a href="http://mmimontbeliard.com/">MMI Montbéliard.</a>
+          <div class="footer__logos">
+            <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
+            <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">
+            <img class="footer__site" src="public/logo_site/logonb_site.png" alt="Logo du site Art visuel et féminisme">
+          </div>
+      </footer>
+</body>
+</html>
