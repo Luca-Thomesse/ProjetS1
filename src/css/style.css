@@ -5,11 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
 
 /* Utils */
-@import url("utils/variables.css");
+@import url("./utils/variables.css");
 
-@import url("/src/css/base/main.css");
+@import url("./base/main.css");
 
-@import url("components/menu.css");
+@import url("./components/menu.css");
 
-@import url("layout/header.css");
-@import url("layout/footer.css");
+@import url("./layout/header.css");
+@import url("./layout/footer.css");

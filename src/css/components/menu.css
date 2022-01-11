@@ -11,7 +11,7 @@
 }
 
 .menu-button__bar {
-    background-color: none;
+  
     color: var(--blanc-maquette);
     width: 100%;
     height: 2px;
@@ -27,7 +27,6 @@
 }
 
 .menu{
-    background-color: var(--gris-maquette);
     position: fixed;
     top: 0;
     left:0;
