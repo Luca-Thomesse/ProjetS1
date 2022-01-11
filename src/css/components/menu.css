@@ -39,7 +39,9 @@
     z-index: 1;
     visibility: hidden;
     opacity: 0;
+    background-color: var(--gris-maquette);
 }
+
 
 .menu--open {
     visibility: visible;
@@ -70,6 +72,6 @@
     font-family: var(--font-texte);
     color: var(--blanc-maquette);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     box-align: center;
 }

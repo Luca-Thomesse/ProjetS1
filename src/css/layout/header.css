@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: stretch;
     height: 100px;
+    z-index: 1;
   }
   
   .header__start,
