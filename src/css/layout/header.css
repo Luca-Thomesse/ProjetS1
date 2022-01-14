@@ -9,6 +9,7 @@
     align-items: stretch;
     height: 100px;
     z-index: 1;
+    box-shadow: 0 0 6px black;
   }
   
   .header__start,
@@ -18,4 +19,9 @@
   
   .header__start {
     align-items: center;
+  }
+
+  .header__logo img {
+    width: 70px;
+    height: auto;
   }

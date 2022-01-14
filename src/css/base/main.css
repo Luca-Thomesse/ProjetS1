@@ -16,6 +16,7 @@
 }
 body {
     width: 100vw;
+    overflow-x: hidden;
 }
 
 #Accueil {
@@ -40,17 +41,28 @@ body {
 }
 
 h1  {
-    font-size: var(--titre-de-page);
+    font-size: 26px;
     font-family: var(--font-titre);
+    padding-top: 150px;
+    text-align: center;
 }
 
 h2 {
     font-size: var(--titre-h2);
     font-family: var(--font-titre);
     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
-.intro>p {
+h3 {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.introa>p {
     font-size: var(--intro-du-site);
     font-family: var(--font-texte);
     margin-top: 50px;
@@ -83,12 +95,62 @@ p {
 
 .caroussel {
     display: flex;
+    overflow-x: scroll;
+}
+
+.caroussel>div>img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    margin: 0 4rem;
+
 }
 
 #mmi {
     color: var(--violet-maquette);
+    transition: all .3s ease-in-out;
+}
+
+#mmi:hover {
+    transform: scale(1.1);
 }
 
 .ftr {
     color: white;
+}
+
+img {
+    width: 100vw;
+}
+
+.frise {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form {
+    margin: 50px;
+}
+
+button {
+   width: 100px;
+   height: 30px;
+   margin-left: 140px;
+}
+
+input {
+    margin: 20px;
+    background-color: gainsboro;
+    width: 150px;
+    height: 40px;
+}
+
+article>a {
+    text-decoration: none;
+    background-color: none;
+    border-color: violet;
+    border: 1rem;
+    border-radius: 10px;
 }

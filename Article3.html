@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>L’art et le féminisme au plus proche des jeunes</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 <body>
     <header class="header">
@@ -14,16 +19,13 @@
                 <img src="public/logo_site/logo_site.png" alt="Logo du site Art visuel et féminisme">
             </a>
         </div>
-
-        <h2>Art visuel et féminisme</h2>
     
-        <div class="header__end">
-            <button>
-                <button class="header__menu-btn menu-btn">
-                <span class="menu-btn__bar"></span>
-            </button>
+        <div class="header__end" x-on:click="menuIsOpen=!menuIsOpen">
+            <div class="header__menu-btn menu-btn" >
+              <span class="menu-btn__bar"></span>
+          </div>
     
-            <nav class="header__menu menu">
+            <nav class="header__menu menu" x-bind:class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
                     <li class="menu__item">
                         <a class="menu__link" href="Article1.html">Une histoire de l'art féministe</a>
@@ -119,7 +121,7 @@
             <p>Le monde change, l'art et le combat féministe également. Comment se transmet le féminisme aujourd'hui ?</p>
               <div></div>
                 <img src="public/images-site/image_tweet_2.webp" alt="Image du tweet de l'article L’expression artistique féministe d’aujourd’hui">
-                <p><a href="Article2.html">LIRE</a></p>
+                <a href="Article2.html">LIRE</a>
               </div>
         </article>
 
@@ -128,7 +130,7 @@
             <p>Une histoire riche en valeurs et en visuels artistiques, découvrez une artiste féministe du passé.</p>
               <div>
                 <img src="public/images-site/image_tweet_1.webp" alt="Image du tweet de l'article Une histoire de l'art féministe">
-                <p><a href="Article1.html">LIRE</a></p>
+                <a href="Article1.html">LIRE</a>
               </div>
         </article>
 
@@ -136,23 +138,23 @@
             <h2 class="tweet__title">Vidéo</h2>
             <p>Découvrez une mise en situation du féminisme au court de cette vidéo</p>
               <div>
-                <img src="#" alt="Image du tweet de la vidéo">
-                <p><a href="Video.html">LIRE</a></p>
+                <img src="./public/images-site/video.png" alt="Image du tweet de la vidéo">
+                <a href="Video.html">LIRE</a>
               </div>
         </article>
     </main>
 
     <footer class="footer">
 
-        <h2>Art visuel et féminisme</h2>
-        <p><a href="Article3.html">FR</a>/<a href="Article3 copy.html"></a>ENG</p>
+        <h2 class="ftr">Art visuel et féminisme</h2>
+        <a class="lang" href="Article3.html">FR</a><a class="lang" href="Article3 copy.html">ENG</a>
         <p>Luca THOMESSE</p>
         <p>Groupe C2</p>
         <address class="footer__adress">
           <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
         </address>
         <p>Mentions légales :</p>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique dans le département <a href="http://mmimontbeliard.com/">MMI Montbéliard.</a>
+        <p>Projet réalisé dans le cadre d’un exercice pédagogique dans le département <a id="mmi" href="http://mmimontbeliard.com/">MMI Montbéliard.</a></p>
           <div class="footer__logos">
             <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
             <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">

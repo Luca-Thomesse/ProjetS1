@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
     <title>Une histoire de l'art féministe</title>
 </head>
 <body>
@@ -15,40 +19,37 @@
             </a>
         </div>
 
-        <h2>Art visuel et féminisme</h2>
-    
-        <div class="header__end">
-            <button>
-                <button class="header__menu-btn menu-btn">
+        <div class="header__end" x-on:click="menuIsOpen=!menuIsOpen">
+            <div class="header__menu-btn menu-btn">
                 <span class="menu-btn__bar"></span>
-            </button>
-    
-            <nav class="header__menu menu">
+            </div>
+
+            <nav class="header__menu menu" x-bind:class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="Article1.html">Une histoire de l'art féministe</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="Article2.html">L’expression artistique féministe d’aujourd’hui</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="Article3.html">L’art et le féminisme au plus proche des jeunes</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="Video.html">La video</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="Glossaire.html">Le glossaire</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="Contact.html">La formulaire de contact</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="A-propos.html">A propos de moi</a>
-                    </li>
+                  <li class="menu__item fr">
+                    <a class="menu__link " href="Article1.html">Une histoire de l'art féministe</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="Article2.html">L’expression artistique féministe d’aujourd’hui</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="Article3.html">L’art et le féminisme au plus proche des jeunes</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="Video.html">Vidéo</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="Glossaire.html">Glossaire</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="Contact.html">Contact</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="A-propos.html">À propos</a>
+                  </li>
                 </ul>
-            </nav>
-        </div>
+              </nav>
+            </div>
     </header>
 
     <main>
@@ -137,12 +138,8 @@
                Citation de Pierre Restany.</p>
         </article>
 
-        <div class="caroussel">
-            <div>
-                <h2>Frise chronologique du féminisme</h2>
-                <img src="public/images-site/frise.webp" alt="Frise chronologique du féminisme en France">
-            </div>
-        <div>
+        <h2 class="frise">Frise chronologique du féminisme</h2>
+            <img src="public/images-site/frise.webp" alt="Frise chronologique du féminisme en France">
 
         <article class="tweet tweet--left">
             <h2 class="tweet__title">L’expression artistique féministe d’aujourd’hui</h2>
@@ -166,7 +163,7 @@
             <h2 class="tweet__title">Vidéo</h2>
             <p>Découvrez une mise en situation du féminisme au court de cette vidéo</p>
               <div>
-                <img src="#" alt="Image du tweet de la vidéo">
+                <img src="./public/images-site/video.png" alt="Image du tweet de la vidéo">
                 <p><a href="Video.html">LIRE</a></p>
               </div>
         </article>
@@ -174,20 +171,20 @@
 
     <footer class="footer">
 
-        <h2>Art visuel et féminisme</h2>
-        <p><a href="Article1.html">FR</a>/<a href="Article1 copy.html"></a>ENG</p>
-        <p>Luca THOMESSE</p>
-        <p>Groupe C2</p>
-        <address class="footer__adress">
-          <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
-        </address>
-        <p>Mentions légales :</p>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique dans le département <a href="http://mmimontbeliard.com/">MMI Montbéliard.</a>
-          <div class="footer__logos">
-            <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
-            <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">
-            <img class="footer__site" src="public/logo_site/logonb_site.png" alt="Logo du site Art visuel et féminisme">
-          </div>
-      </footer>
+            <h2 class="ftr">Art visuel et féminisme</h2>
+            <a class="lang" href="Article1.html">FR</a><a class="lang" href="Article1 copy.html">ENG</a>
+            <p>Luca THOMESSE</p>
+            <p>Groupe C2</p>
+            <address class="footer__adress">
+              <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
+            </address>
+            <p>Mentions légales :</p>
+            <p>Projet réalisé dans le cadre d’un exercice pédagogique dans le département <a id="mmi" href="http://mmimontbeliard.com/">MMI Montbéliard.</a></p>
+              <div class="footer__logos">
+                <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
+                <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">
+                <img class="footer__site" src="public/logo_site/logonb_site.png" alt="Logo du site Art visuel et féminisme">
+              </div>
+          </footer>
 </body>
 </html>

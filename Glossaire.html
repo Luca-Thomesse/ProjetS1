@@ -9,24 +9,23 @@
     <title>Glossaire</title>
 
     <link rel="stylesheet" href="src/css/style.css">
-
+    <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body>
     <header class="header">
 
-        <div class="header__start">
-            <a class="header__logo" href="/">
-                <img src="public/logo_site/logo_site.png" alt="Logo du site Art visuel et féminisme">
-            </a>
-        </div>
+      <div class="header__start">
+        <a class="header__logo" href="/">
+            <img src="public/logo_site/logo_site.png" alt="Logo du site Art visuel et féminisme">
+        </a>
+    </div>
 
-        <div class="header__end">
-            <button>
-                <button class="header__menu-btn menu-btn">
-                <span class="menu-btn__bar"></span>
-            </button>
+    <div class="header__end" x-on:click="menuIsOpen=!menuIsOpen">
+      <div class="header__menu-btn menu-btn" >
+        <span class="menu-btn__bar"></span>
+    </div>
 
-            <nav class="header__menu menu">
+            <nav class="header__menu menu" x-bind:class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
                   <li class="menu__item">
                     <a class="menu__link" href="Article1.html">Une histoire de l'art féministe</a>
@@ -85,20 +84,20 @@
 
     <footer class="footer">
 
-        <h2>Art visuel et féminisme</h2>
-        <p><a href="Glossaire.html">FR</a>/<a href="Glossaire copy.html"></a>ENG</p>
-        <p>Luca THOMESSE</p>
-        <p>Groupe C2</p>
-        <address class="footer__adress">
-          <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
-        </address>
-        <p>Mentions légales :</p>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique dans le département <a href="http://mmimontbeliard.com/">MMI Montbéliard.</a>
-          <div class="footer__logos">
-            <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
-            <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">
-            <img class="footer__site" src="public/logo_site/logonb_site.png" alt="Logo du site Art visuel et féminisme">
-          </div>
+      <h2 class="ftr">Art visuel et féminisme</h2>
+      <a class="lang" href="Glossaire.html">FR</a><a class="lang" href="Glossaire copy.html">ENG</a>
+      <p>Luca THOMESSE</p>
+      <p>Groupe C2</p>
+      <address class="footer__adress">
+        <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
+      </address>
+      <p>Mentions légales :</p>
+      <p>Projet réalisé dans le cadre d’un exercice pédagogique dans le département <a id="mmi" href="http://mmimontbeliard.com/">MMI Montbéliard.</a></p>
+        <div class="footer__logos">
+          <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
+          <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">
+          <img class="footer__site" src="public/logo_site/logonb_site.png" alt="Logo du site Art visuel et féminisme">
+        </div>
     </footer>
       
 </body>

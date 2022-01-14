@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 <body>
     
@@ -16,15 +21,12 @@
             </a>
         </div>
 
-        <h2>Visual art and feminism</h2>
+        <div class="header__end" x-on:click="menuIsOpen=!menuIsOpen">
+          <div class="header__menu-btn menu-btn" >
+            <span class="menu-btn__bar"></span>
+        </div>
     
-        <div class="header__end">
-            <button>
-                <button class="header__menu-btn menu-btn">
-                <span class="menu-btn__bar"></span>
-            </button>
-    
-            <nav class="header__menu menu">
+            <nav class="header__menu menu" x-bind:class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list">
                   <li class="menu__item">
                     <a class="menu__link" href="Article1 copy.html">A history of feminist art</a>
@@ -80,15 +82,17 @@
 
     </main>
 
-    <h2>Visual art and feminism</h2>
-        <p><a href="Contact.html">FR</a>/<a href="Contact copy.html"></a>ENG</p>
+    <footer class="footer">
+
+    <h2 class="ftr">Visual art and feminism</h2>
+        <a class="lang" href="Contact.html">FR</a><a class="lang" href="Contact copy.html">ENG</a>
         <p>Luca THOMESSE</p>
         <p>Group C2</p>
         <address class="footer__adress">
           <a href="mailto:lthomesse@gmail.com">lthomesse@gmail.com</a>
         </address>
         <p>Legal notice :</p>
-        <p>Project carried out as part of an educational exercise in the department <a href="http://mmimontbeliard.com/">MMI Montbéliard.</a>
+        <p>Project carried out as part of an educational exercise in the department <a id="mmi" href="http://mmimontbeliard.com/">MMI Montbéliard.</a>
           <div class="footer__logos">
             <img class="footer__iutbm" src="public/logo_site/logo_iutbm.png" alt="Logo de l'IUT de Belfort-Montbéliard">
             <img class="footer__mmi" src="public/logo_site/logo_mmi.png" alt="Logo du département MMI Montbéliard">

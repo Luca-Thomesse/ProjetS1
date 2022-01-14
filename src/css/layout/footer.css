@@ -2,6 +2,7 @@
     background-color: var(--gris-maquette);
     width: 100%;
     min-height: 300px;
+    position: relative;
 }
   
 .footer a {
@@ -10,5 +11,50 @@
 }
 
 .footer p {
-      color: var(--blanc-maquette)
+      color: var(--blanc-maquette);
+      text-align: left;
+      margin: 20px auto;
+      margin-left: 20px;
+}
+
+.footer__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__adress>a {
+    margin-left: 20px;
+    margin-right: auto;
+    width: max-content;
+    color: var(--violet-maquette);
+}
+
+.ftr {
+    padding-top: 20px;
+}
+
+.lang {
+    padding: 1rem;
+    margin: 40px 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    position: absolute;
+    transition: all .3s ease-in-out;
+}
+
+.lang:nth-of-type(1) {
+    top: 30px;
+    right: 0;
+}
+
+.lang:nth-of-type(2) {
+    top: 100px;
+    right: 0;
+}
+
+.lang:hover {
+    transform: scale(1.1);
+    
 }
